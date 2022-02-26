@@ -95,9 +95,10 @@ function draw(){
        ground.x = ground.width/2
       }
      //pular quando tecla de espaço for pressionada
-      if(keyDown("space") && trex.y > height - 50){
+      if(touches.lenght>0 || keyDown("space") && trex.y > height - 50){
         trex.velocityY = -10;
         sompulo.play();
+        touches = []
        }
   
         trex.velocityY = trex.velocityY + 0.5;
@@ -129,7 +130,7 @@ function draw(){
     restart.visible = true
     over.visible = true
     
-    if (mousePressedOver(restart)){
+    if (touches.lenght>0 || mousePressedOver(restart)){
       reset();
     }
 
