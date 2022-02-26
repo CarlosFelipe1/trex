@@ -51,7 +51,7 @@ function setup(){
   grupoNuvens = new Group();
   grupoCactos = new Group();
 
-  trex.debug = true
+  trex.debug = false
   trex.setCollider("circle", 0, 0, 40)
   //trex.setCollider("rectangle", 60, 0, 100, 250, 90)
 
