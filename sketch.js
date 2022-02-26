@@ -109,7 +109,7 @@ function draw(){
          sommorte.play();
        }
 
-       pontos = pontos + Math.round(frameCount / 150);
+       pontos = pontos + Math.round(getframeRate() / 120);
        if(pontos > 0 && pontos % 1000 === 0) {
         sommark.play();
        }
